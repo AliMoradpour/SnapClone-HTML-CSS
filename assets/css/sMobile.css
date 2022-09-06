@@ -1,0 +1,247 @@
+@media screen and (max-width: 840px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  /* Header  */
+  nav {
+    display: none;
+  }
+  .container {
+    width: 100% !important;
+    padding: 0 !important;
+    height: 70px !important;
+  }
+  .nav-pic img {
+    display: inline-block !important;
+    width: 25px;
+    height: auto;
+  }
+  .logo {
+    margin: 0 auto;
+  }
+  .logo .nav-pic {
+    margin-left: 30rem;
+  }
+
+  /* Intro  */
+
+  .intro {
+    flex-direction: column-reverse;
+    position: relative;
+  }
+  .right {
+    width: 100% !important;
+    position: relative;
+    top: 13rem;
+    height: 350px !important;
+  }
+  .intro .right h2 {
+    position: absolute;
+    right: 10px;
+    top: 50px;
+    font-size: 33px !important;
+  }
+  .intro .right p {
+    position: absolute;
+    right: 10px;
+    top: 10rem;
+    font-size: 18px !important;
+  }
+  .intro .right .btn-outline {
+    position: absolute;
+    bottom: 40px;
+    right: 12%;
+    margin: 0 auto !important;
+    width: 600px;
+    background-color: #fff;
+    color: #404040;
+    font-size: 14px !important;
+  }
+  .left {
+    width: 100% !important;
+    position: absolute;
+    top: -10rem;
+    height: 540px !important;
+  }
+  .left p {
+    display: none;
+  }
+  .Number-input {
+    display: none !important;
+  }
+
+  /* marketdownload */
+
+  .marketdownload {
+    display: none !important;
+  }
+  /* Services  */
+  .services {
+    width: 100% !important;
+    margin-top: 13rem;
+    height: 980px !important;
+  }
+  .services h3 {
+    font-size: 20px !important;
+  }
+  .services p {
+    display: none !important;
+  }
+  .services .card {
+    flex-direction: column;
+    width: 130px !important;
+    height: 80px !important;
+  }
+  .services .card h4 {
+    font-size: 14px !important;
+    margin-top: -2px;
+  }
+  .services .card img {
+    width: 50px !important;
+    margin-top: -15px;
+  }
+
+  /* foodBanner */
+  .foodBanner .first-row img {
+    width: 600px;
+    height: 200px;
+  }
+  .foodBanner .second-row {
+    flex-direction: column;
+    margin-top: -30rem;
+    position: relative;
+  }
+  .foodBanner .second-row .right {
+    display: block !important;
+    margin-top: -15rem;
+  }
+  .foodBanner .second-row .left {
+    margin-top: -20rem;
+    height: 300px !important;
+  }
+  .foodBanner .second-row .left p {
+    display: block !important;
+  }
+  .foodBanner .second-row .left {
+    display: block !important;
+    position: absolute;
+    top: 40rem;
+    padding: 30px !important;
+  }
+  .foodBanner .second-row {
+    margin: 0 !important;
+  }
+
+  /* options part  */
+  .options {
+    margin-top: 12rem;
+  }
+  .options .row {
+    flex-wrap: wrap;
+  }
+  .options .row .col {
+    width: 250px !important;
+  }
+  .options .row .col p,
+  h3 {
+    margin-top: 9px !important;
+  }
+  /* video part  */
+  .video-sec {
+    margin-top: 20rem;
+  }
+  .video-sec video {
+    width: 600px !important;
+    height: 350px !important;
+    border-radius: 20px;
+  }
+  .video-sec p {
+    font-size: 20px !important;
+    padding: 10px 30px !important;
+  }
+
+  /* Benefits for drivers */
+
+  .driver-card {
+    flex-wrap: wrap;
+  }
+  .driver-card li {
+    flex-direction: column;
+  }
+  .driver-card li h4 {
+    margin: 1rem 0;
+  }
+  .driver-card li p {
+    font-size: 14px !important;
+    padding: 10px 0 !important;
+  }
+
+  /* Footer  */
+  footer {
+    margin-top: 30rem;
+    flex-wrap: wrap;
+  }
+  footer ul {
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  footer li {
+    width: 120px;
+    padding: 0 !important;
+    margin: 10px;
+  }
+  footer li a {
+    font-size: 14px !important;
+  }
+  footer .socials {
+    height: 70px;
+  }
+}
+
+/* ======= Small Screen devices ======= */
+
+@media screen and (max-width: 620px) {
+  .logo .nav-pic {
+    margin-left: 10rem;
+  }
+  .btn-outline {
+    width: 580px !important;
+  }
+  .intro .right .btn-outline{
+    right: 2%;
+    width: 80% !important;
+  }
+  .video-sec {
+    margin-top: 40rem;
+  }
+}
+
+/* ======= Medium Screen devices ======= */
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden !important;
+  }
+  header {
+    width: 100% !important;
+  }
+  .intro {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .intro .left {
+    width: 100% !important;
+  }
+  .intro .right {
+    width: 100% !important;
+    top: 350px;
+  }
+  .intro .right .btn-outline{
+    right: 7%;
+    width: 80%;
+  }
+}

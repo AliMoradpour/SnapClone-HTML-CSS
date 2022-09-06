@@ -1,0 +1,358 @@
+@import url("https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap");
+
+/* utilities  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Vazirmatn", sans-serif !important;
+}
+html,
+body {
+  user-select: none;
+}
+:root {
+  --bg-white: #fff;
+  --bg-light: #f2f5f8;
+  --bg-main: #21aa58;
+  --btn-main: #00db75;
+  --txt-color: #404040;
+  --max-width: 1900px;
+}
+.btn {
+  background-color: var(--bg-white);
+  color: var(--bg-main);
+  padding: 10px 50px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn-outline {
+  background-color: transparent;
+  color: var(--bg-white);
+  outline: #fff solid 2px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+li {
+  list-style: none;
+}
+
+/* header  */
+.container {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  padding-right: 250px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background-color: var(--bg-white);
+  z-index: 99999;
+  font-size: 16px;
+  font-weight: lighter;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+nav ul li {
+  padding-right: 40px;
+}
+nav ul li a {
+  color: var(--txt-color);
+}
+header .container .logo span img {
+  display: none;
+}
+/* intro section  */
+
+.intro {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  margin-top: 5rem;
+}
+.intro div {
+  width: 50%;
+  height: 100%;
+}
+.intro .left {
+  background-image: url("../resources/img/intro_desktop.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.intro .right {
+  background-color: var(--bg-main);
+  color: var(--bg-white);
+  padding: 32px 250px 32px 32px;
+}
+.intro .right h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+.intro .right p {
+  font-size: 20px;
+  padding: 16px 0;
+}
+.intro .right .Number-input {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.intro .right .Number-input .input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: var(--bg-white);
+  border-bottom: 1px solid #fff;
+  margin: 20px 40px;
+  padding: 10px 40px;
+  padding-left: 150px;
+}
+.intro .right .Number-input .input::placeholder {
+  color: #fff;
+  font-size: 14px;
+  opacity: 0.6;
+}
+.intro .right .Number-input .dot {
+  position: absolute;
+  top: 10;
+  right: 60%;
+  width: 10px;
+  height: 10px;
+  background-color: var(--bg-white);
+  border-radius: 100%;
+}
+.intro .right .btn-outline {
+  margin: 40px 50px;
+  padding: 10px 60px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.1s ease;
+}
+.intro .right .btn-outline:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Market section  */
+.marketdownload {
+  display: flex;
+  justify-content: center;
+  margin: 6rem 0;
+}
+.marketdownload ul {
+  display: flex;
+}
+.marketdownload ul li {
+  width: 160px;
+  height: 47px;
+  margin: 20px 50px;
+}
+.marketdownload ul li a {
+  width: 100%;
+  height: 100%;
+}
+.marketdownload ul li a img {
+  width: 100%;
+  height: 100%;
+}
+
+/* services  */
+.services {
+  width: var(--max-width);
+  height: 1200px;
+  background-color: var(--bg-light);
+}
+.services .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 40px;
+}
+.services h3 {
+  font-size: 45px;
+  text-align: center;
+  padding: 50px 0;
+  color: #464646;
+  font-weight: bold;
+}
+.services .card h4 {
+  font-size: 16px;
+  color: #000;
+}
+.services .card p {
+  color: rgba(0, 0, 0, 0.4);
+}
+.services .card {
+  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background-color: var(--bg-white);
+  border-radius: 20px;
+  margin: 0 15px;
+  padding: 20px 0;
+}
+.services .card img {
+  width: 62px;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+/* Food Banner  */
+.foodBanner .first-row {
+  margin: 5rem 0;
+  display: flex;
+  justify-content: center;
+}
+.foodBanner .bannerImg {
+  width: 1200px;
+  border-radius: 15px;
+}
+.foodBanner .second-row {
+  width: 100%;
+  height: 430px;
+  display: flex;
+  align-items: center;
+}
+.foodBanner .second-row .right {
+  width: 50%;
+  height: 50vh;
+  background-image: url(../resources/banner/super-app.jpg);
+  background-size: cover;
+  background-position: left center;
+}
+.foodBanner .second-row .left {
+  width: 50%;
+  height: 100%;
+  padding: 50px 30px;
+  padding-left: 250px;
+}
+.foodBanner .second-row .left h3 {
+  font-size: 24px;
+  color: var(--txt-color);
+}
+.foodBanner .second-row .left p {
+  color: var(--txt-color);
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+/* option section  */
+.options {
+  width: 100%;
+  height: 320px;
+  position: relative;
+  top: -60px;
+}
+.options .row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.options .row .col {
+  width: 330px;
+  margin: 20px 30px;
+}
+.options .row .col .card-img {
+  background-color: var(--bg-light);
+  border-radius: 20px;
+  text-align: center;
+}
+.options .row .col h3 {
+  font-size: 16px;
+  margin-top: 30px;
+}
+.options .row .col p {
+  font-size: 11px;
+  margin-top: 20px;
+}
+
+/* video section */
+.video-sec {
+  width: 100%;
+  height: 1700px;
+  background-color: var(--bg-light);
+  text-align: center;
+}
+.video-sec h1 {
+  font-size: 36px;
+  padding-top: 40px;
+  color: var(--txt-color);
+}
+.video-sec p {
+  font-size: 20.3px;
+  padding: 16px 0;
+  font-weight: lighter;
+}
+.video-sec .btn-primary {
+  padding: 10px 30px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--btn-main);
+  color: var(--bg-white);
+  font-size: 18px;
+  font-weight: 700;
+}
+.video-sec video {
+  display: block;
+  margin: 30px auto;
+  width: 1400px;
+  height: 800px;
+  margin-bottom: 8rem;
+}
+/* driver benefits  */
+.video-sec .driver-card {
+  display: flex;
+  justify-content: center;
+}
+.video-sec .driver-card li {
+  margin: 15px;
+  width: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  background-color: var(--bg-white);
+  border-radius: 20px;
+  padding: 40px 30px;
+}
+.video-sec .driver-card li h4 {
+  font-size: 16px;
+}
+.video-sec .driver-card li p {
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+/* Footer section */
+footer {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .list ul {
+  display: flex;
+}
+footer .list ul li {
+  padding: 0 15px;
+  color: var(--txt-color);
+  font-size: 15px;
+}
